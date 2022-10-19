@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" title="more options">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div style="float:left; width:215px">
+                    <b>
+                        <a href="@Url.Action("Index", "Home")" class="navbar-brand">Sharom Abdul Hamid</a>
+                    </b>
+                </div>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="@Url.Action("Index", "Students")" @(ViewContext.RouteData.Values["controller"].ToString().Equals("Students") || ViewContext.RouteData.Values["controller"].ToString().Equals("Enrollments") ? "class=booty" : "")>MVC example</a></li>
+                    <li><a href="" target="" id="reslink" onclick="document.getElementById('ghbutton').click();">GitHub</a></li>
+                    <a href="https://github.com/sharom01" target="_blank" id="ghbutton"></a>
+                    <li><a href="" target="" id="reslink" onclick="document.getElementById('emconbutton').click();">Contact</a></li>
+                    <a href="https://mailhide.io/e/uLb9kmkw" target="_blank" id="emconbutton"></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
