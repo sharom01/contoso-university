@@ -5,8 +5,7 @@ Getting Started with Entity Framework 6 Database First Using MVC 5
 https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/database-first-development/
 
 <br><br>For reference only:
-<br>Removing a file from repository commit history using <a href="https://rtyley.github.io/bfg-repo-cleaner">BFG Repo-Cleaner</a> 
-<br>In the steps below the file name is Web.Somee.config (possibly case sensitive):
+<br>These are steps to remove a file from repository commit history using <a href="https://rtyley.github.io/bfg-repo-cleaner">BFG Repo-Cleaner</a>. In this example the file name is Web.Somee.config (note possible case sensitivity):
 <br>1. Delete Web.Somee.config from https://github.com/sharom01/contoso-university
 <br>2. On the local pc add a new empty folder. Here it is C:\Users\Sharom\source\repos\ContosoClone
 <br> 3. In git bash:
