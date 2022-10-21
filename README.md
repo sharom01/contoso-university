@@ -6,11 +6,10 @@ https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/database-f
 
 <br><br>For reference only:
 <br>Removing a file from repository commit history using <a href="https://rtyley.github.io/bfg-repo-cleaner">BFG Repo-Cleaner</a> 
-<br>In this example the file name is Web.Somee.config (possibly case sensitive)
-<br><br>Steps:
-<br>Delete Web.Somee.config from https://github.com/sharom01/contoso-university
-<br>On the local pc add a new empty folder. Here it is C:\Users\Sharom\source\repos\ContosoClone
-In git bash:
+<br>In the steps below the file name is Web.Somee.config (possibly case sensitive):
+<br>1. Delete Web.Somee.config from https://github.com/sharom01/contoso-university
+<br>2. On the local pc add a new empty folder. Here it is C:\Users\Sharom\source\repos\ContosoClone
+<br> 3. In git bash:
 ```
 $ cd "C:\Users\Sharom\source\repos\ContosoClone"
 ```
